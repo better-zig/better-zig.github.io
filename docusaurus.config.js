@@ -23,8 +23,9 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "zh-CN",
+
+    locales: ["zh-CN", "en", "fr"],
   },
 
   presets: [
@@ -39,6 +40,7 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
+
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -46,6 +48,7 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
+
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -57,23 +60,63 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Zig 学习", // todo x
         logo: {
-          alt: "My Site Logo",
+          alt: "Zig Logo",
           src: "img/logo.svg",
         },
         items: [
+          // TODO X: 教程
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "教程",
+          // },
+
+          //
+          // todo x: 使用自定义导航栏, 参见 sidebars.js
+          //
+
+          // todo x: 教程
           {
-            type: "doc",
-            docId: "intro",
+            type: "docSidebar",
             position: "left",
-            label: "Tutorial",
+            sidebarId: "guide",
+            label: "教程",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+
+          // todo x: 生态
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "ecosystem",
+            label: "生态",
+          },
+
+          // TODO X: 博客
+          { to: "/blog", label: "博客", position: "left" },
+
           {
             href: "https://github.com/better-zig",
             label: "GitHub",
             position: "right",
+          },
+
+          // todo x: 多语言
+          {
+            type: "localeDropdown",
+            position: "right",
+            dropdownItemsAfter: [
+              {
+                type: "html",
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: "https://github.com/better-zig",
+                label: "Help Us Translate",
+              },
+            ],
           },
         ],
       },
