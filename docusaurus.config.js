@@ -152,7 +152,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/goosip_coder", // todo x:
+                href: "https://twitter.com/gossip_coder", // todo x:
               },
             ],
           },

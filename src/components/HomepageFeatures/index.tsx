@@ -8,40 +8,47 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+
+// todo x: 首页内容
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'A better C',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Zig, 更好的 C, 替代 C 语言.
+        <br />
+        与 C 语言有极佳的互操作性, 可以直接 import c lib.
+        <br />
+        FFI 操作体验极佳.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '语法简单',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        语法简单, 吸收 Rust/Go 大量优秀设计.
+        <br />
+        语法噪音比 Rust 小.
+        <br />
+        无 GC, 避免 Go GC 问题.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'IoT 生态',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        嵌入式, IoT 场景.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
