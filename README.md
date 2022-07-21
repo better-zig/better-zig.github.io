@@ -2,6 +2,17 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+### reference:
+
+> docs:
+
+- https://docusaurus.io/zh-CN/docs/installation
+
+> example:
+
+- https://casbin.org/docs/zh-CN/overview
+- https://github.com/casbin/casbin-website-v2
+
 ### Installation
 
 ```
