@@ -1,0 +1,10 @@
+version: 3
+
+tasks:
+  dev:
+    cmds:
+      - npm start
+
+  deploy:
+    cmds:
+      - USE_SSH=true yarn deploy
