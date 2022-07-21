@@ -71,7 +71,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/better-zig",
             label: "GitHub",
             position: "right",
           },
@@ -102,7 +102,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/goosip_coder", // todo x:
               },
             ],
           },
@@ -115,7 +115,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/better-zig", // todo x
               },
             ],
           },
