@@ -2,6 +2,11 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+### Zig 学习:
+
+- https://better-zig.github.io/
+- ⭐⭐⭐⭐⭐
+
 ### reference:
 
 > docs:
