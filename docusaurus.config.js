@@ -94,6 +94,13 @@ const config = {
             label: "生态",
           },
 
+          // todo x: 生态
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "annotated",
+            label: "源码分析",
+          },
           // TODO X: 博客
           { to: "/blog", label: "博客", position: "left" },
 
